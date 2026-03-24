@@ -1,0 +1,246 @@
+_dataset:
+  class: BNCI2015_007
+  code: BNCI2015-007
+  doi: 10.1088/1741-2560/9/4/045006
+  interval:
+  - 0
+  - 0.7
+  n_subjects: 16
+  paradigm: p300
+acquisition:
+  cap_manufacturer: Brain Products
+  channel_types:
+    eeg: 63
+  electrode_type: actiCap active electrode system
+  filters: hardware bandpass filter 0.016–250 Hz
+  ground: forehead
+  hardware: BrainAmp EEG amplifier
+  impedance_threshold_kohm: 10.0
+  line_freq: 50.0
+  montage: 10-10
+  n_channels: 63
+  reference: linked mastoids
+  sampling_rate: 100.0
+  sensor_type: active electrode
+  sensors:
+  - Fp1
+  - Fp2
+  - AF3
+  - AF4
+  - AF7
+  - AF8
+  - Fz
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - FCz
+  - FC1
+  - FC2
+  - FC3
+  - FC4
+  - FC5
+  - FC6
+  - FT7
+  - FT8
+  - T7
+  - T8
+  - Cz
+  - C1
+  - C2
+  - C3
+  - C4
+  - C5
+  - C6
+  - TP7
+  - TP8
+  - CPz
+  - CP1
+  - CP2
+  - CP3
+  - CP4
+  - CP5
+  - CP6
+  - Pz
+  - P1
+  - P2
+  - P3
+  - P4
+  - P5
+  - P6
+  - P7
+  - P8
+  - P9
+  - P10
+  - POz
+  - PO3
+  - PO4
+  - PO7
+  - PO8
+  - Oz
+  - O1
+  - O2
+  software: Pyff, VisionEgg, MATLAB
+bci_application:
+  applications:
+  - speller
+  - communication
+  environment: laboratory
+  online_feedback: true
+cross_validation:
+  cv_method: train on calibration, test on copy-spelling and free-spelling
+  evaluation_type:
+  - within_session
+data_processed: true
+data_structure:
+  n_blocks: 4
+  n_trials: 120
+  trials_context: per_selection (2 levels × 10 repetitions × 6 groups/symbols)
+documentation:
+  associated_paper_doi: 10.1088/1741-2560/11/2/026009
+  contact_info:
+  - benjamin.blankertz@tu-berlin.de
+  country: Germany
+  description: Exploring motion VEPs for gaze-independent communication
+  doi: 10.1088/1741-2560/9/4/045006
+  ethics_approval:
+  - Declaration of Helsinki
+  funding:
+  - DFG grant
+  - grant nos s
+  - BMBF grant
+  - grant no MU MU
+  institution: Berlin Institute of Technology
+  institution_department: Neurotechnology Group
+  investigators:
+  - Sulamith Schaeff
+  - Matthias Sebastian Treder
+  - Bastian Venthur
+  - Benjamin Blankertz
+  keywords:
+  - motion visually evoked potentials
+  - mVEP
+  - BCI
+  - speller
+  - gaze-independent
+  - covert attention
+  - P300
+  - N200
+  license: CC-BY-NC-ND-4.0
+  publication_year: 2012
+  repository: BNCI Horizon
+  senior_author: Benjamin Blankertz
+experiment:
+  class_labels:
+  - Target
+  - NonTarget
+  events:
+    NonTarget: 2
+    Target: 1
+  feedback_type: visual
+  has_training_test_split: true
+  instructions: Copy-spelling and free-spelling with attention to target symbols. Participants counted moving bar/pattern
+    presentations in target location.
+  mode: online
+  n_classes: 2
+  paradigm: p300
+  primary_modality: visual
+  stimulus_modalities:
+  - visual
+  stimulus_presentation:
+    isi_ms: 100 ms
+    repetitions: 10 repetitions per level
+    soa_ms: 200 ms (Cake Spellers) or 266 ms (Motion Center Speller)
+    stimulus_duration_ms: 100 ms
+    total_presentations: 120 per selection (2 levels × 10 repetitions × 6 groups/symbols)
+  stimulus_type: motion VEP (mVEP)
+  study_design: 'Three different Cake Speller modifications: Overt Cake Speller (gaze toward target), Covert Cake Speller
+    (central fixation, covert attention), Motion Center Speller (foveal stimulation). Two-level selection (group-level and
+    symbol-level) from 30 symbols.'
+  study_domain: gaze-independent communication
+  synchronicity: synchronous
+  task_type: visual_speller
+  trial_duration: 30.0
+file_format: gdf
+paradigm_specific:
+  detected_paradigm: p300
+  isi_ms: 100.0
+  n_repetitions: 10
+  n_targets: 6
+  soa_ms: 200.0
+participants:
+  age_max: 30
+  age_mean: 23.8
+  age_min: 21
+  bci_experience: naive
+  clinical_population: Healthy
+  gender:
+    female: 6
+    male: 10
+  handedness: normal or corrected-to-normal vision
+  health_status: patients
+  n_subjects: 16
+  species: human
+performance:
+  N200_latency_covert_ms: 180.0
+  N200_latency_motion_center_ms: 198.0
+  N200_latency_overt_ms: 164.0
+  N200_latency_range_ms: 100-250
+  P300_latency_range_ms: 300-500
+preprocessing:
+  artifact_methods:
+  - min-max criterion (70 μV)
+  - variance criterion
+  bandpass:
+    high_cutoff_hz: 250.0
+    low_cutoff_hz: 0.016
+  data_state: filtered
+  downsampled_to_hz: 100.0
+  epoch_window:
+  - -0.2
+  - 1.0
+  filter_type: hardware bandpass, Chebyshev low-pass for offline
+  highpass_hz: 0.016
+  lowpass_hz: 250.0
+  notes: 'For offline analysis: downsampled to 200 Hz, low-pass filtered (42 Hz passband, 49 Hz stopband). For online: downsampled
+    to 100 Hz. Artifact rejection: min-max ≥70 μV. Nontarget epochs filtered to avoid overlap with targets (3 preceding and
+    4 following stimuli must be nontargets).'
+  preprocessing_applied: true
+  preprocessing_steps:
+  - downsampling
+  - low-pass filter
+  - baseline correction
+  - artifact rejection
+  re_reference: linked mastoids
+runs_per_session: 2
+sessions:
+- practice
+- calibration
+- copy_spelling
+- free_spelling
+sessions_per_subject: 1
+signal_processing:
+  classifiers:
+  - LDA with shrinkage of covariance matrix
+  feature_extraction:
+  - signed square values of point-biserial correlation coefficients
+  frequency_bands:
+    analyzed_range:
+    - 100.0
+    - 800.0
+  spatial_filters:
+  - LDA spatial filter
+tags:
+  modality:
+  - Visual
+  pathology:
+  - Healthy
+  type:
+  - P300
+  - VEP

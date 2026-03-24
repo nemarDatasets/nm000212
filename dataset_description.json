@@ -1,0 +1,49 @@
+{
+	"Name": "BNCI 2015-007 Motion VEP (mVEP) Speller dataset",
+	"BIDSVersion": "1.9.0",
+	"HEDVersion": "8.4.0",
+	"DatasetType": "derivative",
+	"License": "CC-BY-NC-ND-4.0",
+	"Authors": [
+		"Sulamith Schaeff",
+		"Matthias Sebastian Treder",
+		"Bastian Venthur",
+		"Benjamin Blankertz"
+	],
+	"Funding": [
+		"DFG grant",
+		"grant nos s",
+		"BMBF grant",
+		"grant no MU MU"
+	],
+	"EthicsApprovals": [
+		"Declaration of Helsinki"
+	],
+	"ReferencesAndLinks": [
+		"10.1088/1741-2560/11/2/026009"
+	],
+	"GeneratedBy": [
+		{
+			"CodeURL": "https://github.com/NeuroTechX/moabb",
+			"Name": "moabb",
+			"Description": "Mother of All BCI Benchmarks",
+			"Version": "1.5.0"
+		}
+	],
+	"SourceDatasets": [
+		{
+			"DOI": "10.1088/1741-2560/9/4/045006"
+		}
+	],
+	"Keywords": [
+		"motion visually evoked potentials",
+		"mVEP",
+		"BCI",
+		"speller",
+		"gaze-independent",
+		"covert attention",
+		"P300",
+		"N200"
+	],
+	"PublicationYear": 2012
+}

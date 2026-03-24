@@ -1,0 +1,42 @@
+{
+	"TaskName": "p300",
+	"Manufacturer": "Brain Products",
+	"PowerLineFrequency": 50.0,
+	"SamplingFrequency": 100.0,
+	"SoftwareFilters": {
+		"preprocessing_steps": {
+			"Description": "downsampling, low-pass filter, baseline correction, artifact rejection"
+		}
+	},
+	"RecordingDuration": 2084.83,
+	"RecordingType": "continuous",
+	"EEGReference": "linked mastoids",
+	"EEGGround": "forehead",
+	"EEGPlacementScheme": "10-10 system",
+	"EEGChannelCount": 63,
+	"EOGChannelCount": 0,
+	"ECGChannelCount": 0,
+	"EMGChannelCount": 0,
+	"TriggerChannelCount": 0,
+	"ManufacturersModelName": "BrainAmp EEG amplifier",
+	"SoftwareVersions": "Pyff, VisionEgg, MATLAB",
+	"CapManufacturer": "Brain Products",
+	"HardwareFilters": {
+		"Bandpass": {
+			"low_cutoff_hz": 0.016,
+			"high_cutoff_hz": 250.0,
+			"Type": "hardware bandpass, Chebyshev low-pass for offline"
+		}
+	},
+	"TaskDescription": "[visual_speller] Three different Cake Speller modifications: Overt Cake Speller (gaze toward target), Covert Cake Speller (central fixation, covert attention), Motion Center Speller (foveal stimulation). Two-level selection (group-level and symbol-level) from 30 symbols. Trial duration: 30.0s, ISI: 100.0ms, SOA: 200.0ms.",
+	"Instructions": "Copy-spelling and free-spelling with attention to target symbols. Participants counted moving bar/pattern presentations in target location.",
+	"CogAtlasID": "https://www.cognitiveatlas.org/task/id/tsk_GxjZBNiJorj1K/",
+	"InstitutionName": "Berlin Institute of Technology",
+	"InstitutionAddress": "Germany",
+	"InstitutionalDepartmentName": "Neurotechnology Group",
+	"CapManufacturersModelName": "n/a",
+	"SubjectArtefactDescription": "Impedance kept below 10.0 kOhm",
+	"DeviceSerialNumber": "n/a",
+	"Description": "Exploring motion VEPs for gaze-independent communication",
+	"MISCChannelCount": 0
+}
