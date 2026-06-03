@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.nm000212-blue)](https://doi.org/10.82901/nemar.nm000212)
+
 # BNCI 2015-007 Motion VEP (mVEP) Speller dataset
 
 BNCI 2015-007 Motion VEP (mVEP) Speller dataset.
