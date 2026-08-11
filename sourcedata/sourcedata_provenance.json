@@ -1,0 +1,95 @@
+{
+ "dataset": "nm000212",
+ "moabb_class": "BNCI2015_007",
+ "moabb_version_used": "1.5.0",
+ "retrieved": "2026-08-11",
+ "retrieved_by": "moabb.datasets.BNCI2015_007.data_path()",
+ "upstream_cache_root": "/expanse/lustre/scratch/bpinto/temp_project/sourcedata_staging/mne_data/MNE-bnci-data/bbci/BNCIHorizon2020-MVEP",
+ "license": "CC-BY-NC-ND-4.0",
+ "doi": "10.1088/1741-2560/9/4/045006",
+ "naming": "upstream_filenames_restored",
+ "n_files": 16,
+ "total_bytes": 2699328895,
+ "files": [
+  {
+   "file": "MVEP_VPfat.mat",
+   "bytes": 172689490,
+   "sha256": "f5a25019eac756ecedd03b1faa3e6a027157d6034d7848506bf6d97ee80d5aa2"
+  },
+  {
+   "file": "MVEP_VPgdf.mat",
+   "bytes": 127381363,
+   "sha256": "3f22af897c14432d6736050dd8aef2028ddd5a101787c2596fefe6f40ec80b6c"
+  },
+  {
+   "file": "MVEP_VPgdg.mat",
+   "bytes": 176819890,
+   "sha256": "da5733ee9edbce6b9725266c040a4331ae8c832ae1a0515963aac551aa5cfe9e"
+  },
+  {
+   "file": "MVEP_VPiac.mat",
+   "bytes": 132939861,
+   "sha256": "d386cc9376a1d715610aa3868ab856f7042c58b2d0c4554b66cd1586abd334c4"
+  },
+  {
+   "file": "MVEP_VPiba.mat",
+   "bytes": 221430315,
+   "sha256": "edb268eb109b4921e5447360f9ccf70983e45e11bd7a3811c9faabaf58786779"
+  },
+  {
+   "file": "MVEP_VPibe.mat",
+   "bytes": 186414585,
+   "sha256": "496f8afb70ad607897b66bd06253f5d214eb7a617e7eff110d0daac08e2e7c8a"
+  },
+  {
+   "file": "MVEP_VPibq.mat",
+   "bytes": 158633748,
+   "sha256": "f625ad5caaa963778374de029367c64e24dc38216e2d1fd327d0178f7b8fe10e"
+  },
+  {
+   "file": "MVEP_VPibs.mat",
+   "bytes": 203827358,
+   "sha256": "1d02728fa4e710a3bffc30c70025f422c9613d2c770f65ca5a055f35cac16415"
+  },
+  {
+   "file": "MVEP_VPibt.mat",
+   "bytes": 168092829,
+   "sha256": "fa0977a1b821d70d83bf8aff7287032be63733d4dc73baaffed294c9c4c798f3"
+  },
+  {
+   "file": "MVEP_VPibu.mat",
+   "bytes": 175888572,
+   "sha256": "200604072a837cc851b64d0c7d8d58a248f4f96d9eec77aa55f665788723ceec"
+  },
+  {
+   "file": "MVEP_VPibv.mat",
+   "bytes": 184575906,
+   "sha256": "3a8a2e950f33eb8aee3779fd70b3ffc9373e07e86652763b861d8705a373fdb4"
+  },
+  {
+   "file": "MVEP_VPibw.mat",
+   "bytes": 171239456,
+   "sha256": "abcf747fe55d5874b9ce9cc66a7fe2007e7f8cec3f88f117f5557786fc2b1c4c"
+  },
+  {
+   "file": "MVEP_VPibx.mat",
+   "bytes": 158420143,
+   "sha256": "c607622170956d79b7badbb56165fe2e6944082a9709ad012f38b3edf4278f5f"
+  },
+  {
+   "file": "MVEP_VPiby.mat",
+   "bytes": 131907486,
+   "sha256": "2b71c4157608bd87641ff47f22a8221c6cbc9a75185d6399199f4a29179222ba"
+  },
+  {
+   "file": "MVEP_VPice.mat",
+   "bytes": 146288218,
+   "sha256": "234fe9e22934429a8e1d3cebd5ce23fc91e7f4dd45ecf73ddf7700b0eab9d0d8"
+  },
+  {
+   "file": "MVEP_VPicv.mat",
+   "bytes": 182779675,
+   "sha256": "a7bed68b5a8e4659012ecbab44a41cfa1f7eaed39b3e236b82d23fe9396fbb31"
+  }
+ ]
+}
