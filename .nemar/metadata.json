@@ -1,12 +1,49 @@
 {
   "version": "2.0",
   "pipeline_stage": "enriched",
+  "title": "BNCI 2015-007 Motion VEP (mVEP) Speller dataset",
+  "description": "This dataset comprises EEG recordings from 16 healthy participants performing motion visually evoked potential (mVEP) speller tasks using three different paradigm variants: overt gaze-directed, covert attention-based, and foveal motion center stimulation. The study investigates gaze-independent brain-computer interface communication through P300-based visual speller applications with two-level hierarchical selection from 30 symbols, employing 63-channel EEG recordings at 100 Hz sampling rate with preprocessed data including artifact rejection and baseline correction.",
+  "methods_description": "EEG data were acquired using a 63-channel BrainAmp amplifier with actiCap active electrodes in a 10-10 montage, sampled at 100 Hz with online hardware bandpass filtering (0.016–250 Hz). Participants performed copy-spelling and free-spelling tasks with motion VEP stimuli presented at 200 ms (Cake Spellers) or 266 ms (Motion Center Speller) stimulus onset asynchrony. Offline preprocessing included downsampling to 100 Hz, low-pass filtering (42 Hz passband), baseline correction, and artifact rejection using min-max criterion (≥70 μV) and variance-based methods. Classification employed LDA with shrinkage covariance estimation on signed square point-biserial correlation coefficients.",
+  "license": "CC-BY-NC-ND-4.0",
+  "dataset_type": "derivative",
   "authors": {
     "Sulamith Schaeff": {},
     "Matthias Sebastian Treder": {},
     "Bastian Venthur": {},
     "Benjamin Blankertz": {}
   },
+  "keywords": [
+    {
+      "term": "motion visually evoked potentials"
+    },
+    {
+      "term": "brain-computer interfaces"
+    },
+    {
+      "term": "P300"
+    },
+    {
+      "term": "N200"
+    },
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "visual speller"
+    },
+    {
+      "term": "covert attention"
+    },
+    {
+      "term": "gaze-independent communication"
+    },
+    {
+      "term": "mVEP"
+    },
+    {
+      "term": "speller"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.1088/1741-2560/9/4/045006",
@@ -24,11 +61,6 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000212",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.21105/joss.01896",
       "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
@@ -36,6 +68,11 @@
     {
       "identifier": "10.1038/s41597-019-0104-8",
       "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000212",
+      "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     }
   ],
@@ -57,67 +94,24 @@
     },
     {
       "funder_name": "BMBF"
-    },
-    {
-      "funder_name": "Deutsche Forschungsgemeinschaft (DFG)"
-    },
-    {
-      "funder_name": "Bundesministerium für Bildung und Forschung (BMBF)"
     }
   ],
-  "title": "BNCI 2015-007 Motion VEP (mVEP) Speller dataset",
-  "license": "CC-BY-NC-ND-4.0",
-  "dataset_type": "derivative",
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "1.4 GB (33 files)"
+    "4.1 GB (49 files)"
   ],
   "formats": [
     ".bdf",
     ".json",
+    ".mat",
     ".md",
     ".tsv",
     ".yaml",
     ".yml"
   ],
-  "description": "This dataset comprises EEG recordings from 16 healthy participants performing motion visually evoked potential (mVEP) speller tasks using three different paradigm variants: overt gaze-directed (Overt Cake Speller), covert attention-based (Covert Cake Speller), and foveal motion center stimulation (Motion Center Speller). The study investigates gaze-independent brain-computer interface communication through P300-based visual speller applications with two-level hierarchical selection from 30 symbols. Data were acquired at 100 Hz from 63 electrodes and include preprocessed signals with artifact rejection and baseline correction (epoch window: -0.2 to 1.0 s).",
-  "methods_description": "EEG data were recorded from 16 healthy participants (mean age 23.8 years) using a 63-channel BrainAmp amplifier with actiCap active electrodes in a 10-10 montage. Signals were sampled at 100 Hz with online hardware bandpass filtering (0.016–250 Hz), referenced to linked mastoids with ground at forehead. Offline preprocessing included low-pass filtering (42 Hz passband), baseline correction, and artifact rejection using min-max criterion (≥70 μV) and variance-based methods. Participants performed copy-spelling and free-spelling tasks with visual feedback in a synchronous online mode.",
-  "keywords": [
-    {
-      "term": "motion visually evoked potentials"
-    },
-    {
-      "term": "mVEP"
-    },
-    {
-      "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
-    },
-    {
-      "term": "P300",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D058765"
-    },
-    {
-      "term": "visual speller"
-    },
-    {
-      "term": "covert attention"
-    },
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "gaze-independent"
-    },
-    {
-      "term": "N200"
-    }
-  ],
-  "source_hash": "e6d6cc3a27a249169fa75d3426d2ee2061948622d3c16b0ff95c9d1259753470"
+  "source_hash": "0d60e4d64961773158efe7541a98fe3cb59f8f121761f6c9213c9b8077d2157f"
 }
