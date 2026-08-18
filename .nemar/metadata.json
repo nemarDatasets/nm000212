@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "BNCI 2015-007 Motion VEP (mVEP) Speller dataset",
-  "description": "This dataset comprises EEG recordings from 16 healthy participants performing motion visually evoked potential (mVEP) speller tasks using three different paradigm variants: overt gaze-directed, covert attention-based, and foveal motion center stimulation. The study investigates gaze-independent brain-computer interface communication through P300-based visual speller applications with two-level hierarchical selection from 30 symbols, employing 63-channel EEG recordings at 100 Hz sampling rate with preprocessed data including artifact rejection and baseline correction.",
-  "methods_description": "EEG data were acquired using a 63-channel BrainAmp amplifier with actiCap active electrodes in a 10-10 montage, sampled at 100 Hz with online hardware bandpass filtering (0.016–250 Hz). Participants performed copy-spelling and free-spelling tasks with motion VEP stimuli presented at 200 ms (Cake Spellers) or 266 ms (Motion Center Speller) stimulus onset asynchrony. Offline preprocessing included downsampling to 100 Hz, low-pass filtering (42 Hz passband), baseline correction, and artifact rejection using min-max criterion (≥70 μV) and variance-based methods. Classification employed LDA with shrinkage covariance estimation on signed square point-biserial correlation coefficients.",
+  "description": "This dataset comprises EEG recordings from 16 healthy participants performing motion visually evoked potential (mVEP) speller tasks using three different paradigm variants: overt gaze-directed, covert attention-based, and foveal motion center stimulation. The study investigates gaze-independent brain-computer interface communication through motion VEP-based P300 visual speller applications with two-level hierarchical selection from 30 symbols (6 symbols per level), employing 63-channel EEG recordings at 100 Hz sampling rate with preprocessed data including artifact rejection and baseline correction.",
+  "methods_description": "EEG data were acquired using a 63-channel BrainAmp amplifier with actiCap active electrodes in a 10-10 montage, sampled at 100 Hz with online hardware bandpass filtering (0.016–250 Hz). Participants performed copy-spelling and free-spelling tasks with motion VEP stimuli presented at 200 ms (Cake Spellers) or 266 ms (Motion Center Speller) stimulus onset asynchrony. Preprocessing included downsampling, low-pass filtering (42 Hz passband), baseline correction, and artifact rejection using min-max criterion (≥70 μV) and variance-based methods. Classification employed linear discriminant analysis with shrinkage-regularized covariance matrices on signed square point-biserial correlation coefficients.",
   "license": "CC-BY-NC-ND-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -17,7 +17,12 @@
       "term": "motion visually evoked potentials"
     },
     {
-      "term": "brain-computer interfaces"
+      "term": "mVEP"
+    },
+    {
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
       "term": "P300"
@@ -29,19 +34,25 @@
       "term": "EEG"
     },
     {
+      "term": "speller"
+    },
+    {
       "term": "visual speller"
+    },
+    {
+      "term": "gaze-independent"
     },
     {
       "term": "covert attention"
     },
     {
-      "term": "gaze-independent communication"
+      "term": "hierarchical selection"
     },
     {
-      "term": "mVEP"
+      "term": "Cake Speller"
     },
     {
-      "term": "speller"
+      "term": "Motion Center Speller"
     }
   ],
   "related_identifiers": [
@@ -94,6 +105,12 @@
     },
     {
       "funder_name": "BMBF"
+    },
+    {
+      "funder_name": "Deutsche Forschungsgemeinschaft (DFG)"
+    },
+    {
+      "funder_name": "Bundesministerium für Bildung und Forschung (BMBF)"
     }
   ],
   "resource_type_general": "Dataset",
@@ -113,5 +130,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "0d60e4d64961773158efe7541a98fe3cb59f8f121761f6c9213c9b8077d2157f"
+  "source_hash": "28ed79a883d6b1ac7874b6308ec4480d2eb07e44f2a5ddf195eb058be3980801"
 }
