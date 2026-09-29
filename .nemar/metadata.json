@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "BNCI 2015-007 Motion VEP (mVEP) Speller dataset",
-  "description": "This dataset comprises EEG recordings from 16 healthy participants performing motion visually evoked potential (mVEP) speller tasks using three different paradigm variants: overt gaze-directed, covert attention-based, and foveal motion center stimulation. The study investigates gaze-independent brain-computer interface communication through motion VEP-based P300 visual speller applications with two-level hierarchical selection from 30 symbols (6 symbols per level), employing 63-channel EEG recordings at 100 Hz sampling rate with preprocessed data including artifact rejection and baseline correction.",
-  "methods_description": "EEG data were acquired using a 63-channel BrainAmp amplifier with actiCap active electrodes in a 10-10 montage, sampled at 100 Hz with online hardware bandpass filtering (0.016–250 Hz). Participants performed copy-spelling and free-spelling tasks with motion VEP stimuli presented at 200 ms (Cake Spellers) or 266 ms (Motion Center Speller) stimulus onset asynchrony. Preprocessing included downsampling, low-pass filtering (42 Hz passband), baseline correction, and artifact rejection using min-max criterion (≥70 μV) and variance-based methods. Classification employed linear discriminant analysis with shrinkage-regularized covariance matrices on signed square point-biserial correlation coefficients.",
+  "description": "EEG recordings from 16 healthy, BCI-naive participants using a motion visual evoked potential (mVEP) speller for gaze-independent communication. Three Cake Speller variants were tested (overt, covert, and Motion Center), each with a two-level selection of 30 symbols. The recordings were made in practice, calibration, copy-spelling, and free-spelling sessions and capture N200 and P300 responses to target and non-target motion stimuli.",
+  "methods_description": "EEG was recorded with 63 active electrodes (actiCap, BrainAmp amplifier, 10-10 montage, linked-mastoid reference). Data were downsampled to 100 Hz for the released dataset (offline analysis used 200 Hz in the original study). Stimuli were presented with a 200 ms SOA (266 ms for the Motion Center Speller) and 10 repetitions per level. Preprocessing included downsampling, low-pass filtering, baseline correction, and artifact rejection (min-max criterion of 70 μV). Classification used shrinkage LDA on features from signed squared point-biserial correlation coefficients.",
   "license": "CC-BY-NC-ND-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -14,15 +14,13 @@
   },
   "keywords": [
     {
+      "term": "EEG"
+    },
+    {
       "term": "motion visually evoked potentials"
     },
     {
-      "term": "mVEP"
-    },
-    {
-      "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+      "term": "brain-computer interface"
     },
     {
       "term": "P300"
@@ -31,28 +29,10 @@
       "term": "N200"
     },
     {
-      "term": "EEG"
-    },
-    {
-      "term": "speller"
-    },
-    {
-      "term": "visual speller"
-    },
-    {
-      "term": "gaze-independent"
+      "term": "gaze-independent speller"
     },
     {
       "term": "covert attention"
-    },
-    {
-      "term": "hierarchical selection"
-    },
-    {
-      "term": "Cake Speller"
-    },
-    {
-      "term": "Motion Center Speller"
     }
   ],
   "related_identifiers": [
@@ -74,12 +54,12 @@
     {
       "identifier": "10.21105/joss.01896",
       "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
+      "relation_type": "References"
     },
     {
       "identifier": "10.1038/s41597-019-0104-8",
       "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
+      "relation_type": "References"
     },
     {
       "identifier": "https://nemar.org/dataset/nm000212",
@@ -107,10 +87,10 @@
       "funder_name": "BMBF"
     },
     {
-      "funder_name": "Deutsche Forschungsgemeinschaft (DFG)"
+      "funder_name": "Deutsche Forschungsgemeinschaft"
     },
     {
-      "funder_name": "Bundesministerium für Bildung und Forschung (BMBF)"
+      "funder_name": "Bundesministerium für Bildung und Forschung"
     }
   ],
   "resource_type_general": "Dataset",
@@ -119,7 +99,7 @@
     "eeg"
   ],
   "sizes": [
-    "4.1 GB (49 files)"
+    "3.79 GB (49 files)"
   ],
   "formats": [
     ".bdf",
