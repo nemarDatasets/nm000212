@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "BNCI 2015-007 Motion VEP (mVEP) Speller dataset",
-  "description": "EEG recordings from 16 healthy, BCI-naive participants using a motion visual evoked potential (mVEP) speller for gaze-independent communication. Three Cake Speller variants were tested (overt, covert, and Motion Center), each with a two-level selection of 30 symbols. The recordings were made in practice, calibration, copy-spelling, and free-spelling sessions and capture N200 and P300 responses to target and non-target motion stimuli.",
-  "methods_description": "EEG was recorded with 63 active electrodes (actiCap, BrainAmp amplifier, 10-10 montage, linked-mastoid reference). Data were downsampled to 100 Hz for the released dataset (offline analysis used 200 Hz in the original study). Stimuli were presented with a 200 ms SOA (266 ms for the Motion Center Speller) and 10 repetitions per level. Preprocessing included downsampling, low-pass filtering, baseline correction, and artifact rejection (min-max criterion of 70 μV). Classification used shrinkage LDA on features from signed squared point-biserial correlation coefficients.",
+  "description": "EEG recordings from 16 healthy, BCI-naive participants using a motion visual evoked potential (mVEP) speller for gaze-independent communication. Three Cake Speller variants were compared: overt, covert, and a foveal Motion Center Speller. Spelling used a two-level selection among 30 symbols. The sessions comprise practice, calibration, copy-spelling and free-spelling phases, recorded with 63 channels. The data are released in a preprocessed form at 100 Hz, with Target and NonTarget event annotations.",
+  "methods_description": "EEG was recorded with a BrainAmp amplifier and actiCap active electrodes (63 channels, 10-10 montage, linked-mastoid reference, hardware bandpass 0.016-250 Hz). Stimuli were presented with Pyff and VisionEgg. The SOA was 200 ms for the Cake Spellers and 266 ms for the Motion Center Speller, with 10 repetitions per selection level. Preprocessing included downsampling, low-pass filtering, baseline correction and artifact rejection (min-max 70 μV and variance criteria). Classification used shrinkage LDA trained on calibration data and tested on copy-spelling and free-spelling.",
   "license": "CC-BY-NC-ND-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -26,13 +26,13 @@
       "term": "P300"
     },
     {
-      "term": "N200"
-    },
-    {
-      "term": "gaze-independent speller"
+      "term": "speller"
     },
     {
       "term": "covert attention"
+    },
+    {
+      "term": "gaze-independent communication"
     }
   ],
   "related_identifiers": [
@@ -85,12 +85,6 @@
     },
     {
       "funder_name": "BMBF"
-    },
-    {
-      "funder_name": "Deutsche Forschungsgemeinschaft"
-    },
-    {
-      "funder_name": "Bundesministerium für Bildung und Forschung"
     }
   ],
   "resource_type_general": "Dataset",
@@ -110,5 +104,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "28ed79a883d6b1ac7874b6308ec4480d2eb07e44f2a5ddf195eb058be3980801"
+  "source_hash": "1eaadc9ddc32645d5e3c579d3f9515349e52b55e2214fb9c3dbaf48d7e761f9c"
 }
